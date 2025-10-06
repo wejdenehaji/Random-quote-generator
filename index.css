@@ -1,0 +1,123 @@
+/* hola css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 20% 70% 10%;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    align-items:baseline; 
+    gap: 20px;
+}
+main{
+    font-size: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#category{
+    font-size:17px;
+    text-align: left;
+}
+
+footer{
+    text-align: center;
+}
+button{ 
+    font-size: 14px;
+    line-height: 30px;
+    width: 150px;
+    padding: 11px;
+    border-radius: 18px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    }
+section {
+    display: grid;
+    width: 70%;
+    height: 80%;
+    padding: 30px;
+    backdrop-filter: blur(6px);
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: all 0.3s ease;
+    grid-template-rows: 85% 15%;
+}
+img{
+    width: 23px;
+    height: 26px;
+    justify-content: right;
+    margin-left: auto;
+}
+#favicon{
+    align-items:center;
+    display: grid;
+    grid-template-columns: 90% 10%;
+    justify-content:space-between;
+}
+#getFavorite{
+    font-size: 17px;
+    border-radius: 35%;
+    padding: 7px;
+}
+#favoriteSection {
+    display: grid;
+    width: 70%;
+    height: 80%;
+    padding: 30px;
+    backdrop-filter: blur(6px);
+    border-radius: 20px;
+    overflow-y: auto;      
+}
+
+#favoriteSection li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7f7f729;
+  margin: 4px 0;
+  padding: 4px 8px;
+
+    border-radius: 20px;
+  font-size: 0.85rem;       /* smaller font */
+  max-width: 90%;         /* limit width */
+  word-break: break-word;
+  height: 90%;   /* wrap long quotes */
+}
+
+#favoriteSection li span {
+  flex-grow: 1;
+  margin-right: 8px;
+  overflow-wrap: break-word;
+}
+
+#favoriteSection li button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-size: 0.75rem;     
+  padding: 2px 6px;
+  cursor: pointer;
+  height: 24px;
+  min-width: 50px;
+}
+
+#favoriteSection li button:hover {
+  background-color: #c0392b;
+}
+
